@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #040404 url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqq0RdIhtUPo8UciZPJprqlxmsP_DS_UpQeA&s') no-repeat center  center/cover;
+}
+
+header{
+    padding: 6.25rem 0;
+    color: rgba(255,255,255,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header h1{
+    margin: 0 0 2rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 70%;
+    width: 50%;
+    margin: 2rem auto;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+form input{
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+form button{
+    padding: 1rem 2rem;
+    border: 0;
+    background-color: lightblue;
+    color: rgba(255,255,255,0.95);
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: gray;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+input:focus, button:focus{
+    outline: none;
+}
+.btn{
+    padding: 0.25rem 0.65rem;
+    border: 0;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+.btn:hover{
+    background-color: gray;
+    transform: scale(1.3);
+}
+
+ul.songs{
+    padding: 0;
+    list-style-type: none;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+ul.songs li{
+    margin: 0.65rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    margin: 2rem auto;
+    width: 32rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+.container h2{
+    font-weight: 300;
+}
+
+.container p{
+    text-align: center;
+}
+
+.toast{
+    margin: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+    background-color: #aa175c;
+    font-size: 1rem;
+}
+
+
+#result{
+    background: rgba(0,0,0,0.2);
+    border-radius: 7px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.centered button{
+    transform: scale(1.3);
+    margin: 15px;
+}
